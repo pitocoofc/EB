@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Operação Fronteira | Exército Brasileiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde-militar: #4caf50;
+      --verde-dark: #2e7d32;
+      --bg-preto: #0d0d0d;
+      --card-bg: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-preto);
+      background-image: radial-gradient(circle, #1a2e1a 0%, #0d0d0d 100%);
+      color: #eeeeee;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* Caminho relativo para a imagem de fundo */
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('assets/capa.png'); 
+      background-size: cover;
+      background-position: center;
+      border-bottom: 5px solid var(--verde-militar);
+    }
+
+    header h1 {
+      font-family: 'Black Ops One', cursive;
+      font-size: 4rem;
+      margin: 0;
+      color: var(--verde-militar);
+      text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+    }
+
+    /* ... restante do CSS permanece igual ... */
+    header p { font-size: 1.5rem; max-width: 700px; text-shadow: 2px 2px 5px rgba(0,0,0,0.9); }
+    .btn-discord { background-color: var(--verde-militar); color: white; padding: 15px 40px; text-decoration: none; font-family: 'Black Ops One', cursive; font-size: 1.2rem; border-radius: 5px; transition: 0.3s; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3); margin-top: 20px; }
+    .btn-discord:hover { background-color: var(--verde-dark); transform: scale(1.05); }
+    section { max-width: 1100px; margin: 50px auto; padding: 20px; }
+    h2 { font-family: 'Black Ops One', cursive; color: var(--verde-militar); border-bottom: 2px solid var(--verde-militar); display: inline-block; margin-bottom: 30px; }
+    .grid-faccoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card { background: var(--card-bg); border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+    .card:hover { border-color: var(--verde-militar); transform: translateY(-5px); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-content { padding: 20px; }
+    .card-content h3 { margin-top: 0; color: var(--verde-militar); }
+    footer { text-align: center; padding: 50px; background: #050505; color: #777; }
+    footer span { color: var(--verde-militar); font-weight: bold; }
+    @media (max-width: 768px) { header h1 { font-size: 2.5rem; } header p { font-size: 1.1rem; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>OPERAÇÃO FRONTEIRA</h1>
+    <p>O simulador de Exército Brasileiro definitivo no Roblox. Hierarquia, Disciplina e Combate.</p>
+    <a href="https://discord.gg/7BNjVtFpTE" target="_blank" class="btn-discord">ALISTE-SE NO DISCORD</a>
+  </header>
+
+  <section id="sobre">
+    <h2>O Projeto Exército Brasileiro</h2>
+    <p>
+      Com uma equipe de desenvolvedores experientes de Luau e investimenros pesados.
+    </p>
+  </section>
+
+  <section id="faccoes">
+    <h2>Facções Principais</h2>
+    <div class="grid-faccoes">
+      
+      <div class="card">
+        <img src="assets/EB.png" alt="Exército Brasileiro">
+        <div class="card-content">
+          <h3>Exército Brasileiro</h3>
+          <p>Mantenha a soberania nacional. Junte-se às fileiras e torne-se um Oficial de elite.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/comando.png" alt="Comando de Fronteira">
+        <div class="card-content">
+          <h3>Comando de Fronteira</h3>
+          <p>Grupos táticos que operam nas zonas cinzentas. Onde a lei não chega.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/RT.png" alt="Revolução Trabalhista">
+        <div class="card-content">
+          <h3>RT - Revolução Trabalhista</h3>
+          <p>O levante popular contra o sistema. Organização e estratégia.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Apoiado por <span>Enzio(discord)</span></p>
+    <p>© 2024 Projeto Operação Fronteira - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
